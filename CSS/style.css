@@ -1,0 +1,173 @@
+/* Question 1: Make HTML5 new elements display as block-level elements for older browsers */
+header, nav, footer, article, section, aside, figure, figcaption {
+    display: block;
+}
+
+
+/* Question 2: Style the body element with the palette I've chosen to style the website*/
+:root {
+    --violet: #6f08a6;
+    --pink: #852659ff;
+    --apricot: #ffd3baff;
+    --brown: #3a280c;
+    --white-pink: #da6a6a;
+}
+* {
+    margin: 0;
+}
+body {
+    color: var(--white-pink);   /* a */
+    background-image: url('../assets/images/dark-wood7.jpg');  /* b */
+    font-family: Arial, Helvetica, sans-serif;  /* c */
+    margin: 0;  /* d */
+}
+
+/* Question 3: Style the container */
+.container {
+    width: 950px; /*  a  */
+    margin: 5px auto; /* Aligning the container at the center as asked, b/c */
+    background-color: var(--brown); /* d */
+}
+
+/* Question 4: Style "content" */
+.content {
+    line-height: 1.4em; /*a  */
+    padding: 10px; /* b */
+}
+
+/* Question 5: Style header, nav, and footer elements */
+header, nav, footer {
+    background-color: var(--pink);   /* a */
+    color: var(--apricot); /*  b  */
+}
+
+/* Question 6: Style unordered list inside nav element */
+nav ul {
+    margin: 0; /* a */
+    padding: 5px; /* b */
+}
+
+/* Question 7: Style list items inside the navigation bar */
+nav li {
+    display: inline;  /* a */
+    margin-right: 40px;  /* b */
+    text-transform: Uppercase;  /* c */
+}
+
+/* Question 8: Apply the 4 pseudo-classes to anchor tags elements */
+nav a:link {
+    color: var(--white-pink);  /* a */
+}
+
+nav a:visited {
+    color: var(--apricot);  /* b */
+}
+
+nav a:hover {
+    color: var(--violet);  /* c */
+    cursor: pointer;
+}
+
+nav a:active {
+    color: var(--brown);  /* d */
+}
+
+/* Question 9: Style the anchor tags in navigation */
+nav a {
+    color: var(--brown);  /* a */
+    text-decoration: none;  /* b */
+}
+
+/* Question 10: Style h1, h2, and h3 */
+h1, h2, h3 {
+    margin: 10px; /* a */
+    text-transform: uppercase; /* b */
+    color: var(--brown); /* c */
+}
+
+/* Question 11: Style the custom class "img-centre"  I didn't understand this question sorry*/
+
+
+/* Question 12: Style audio and video */
+audio, video {
+    display: block;   /* A */
+    margin: 10px auto; /* b */
+}
+
+/* Question 13: Style table elements */
+table {
+    width: 800px;  /* a */
+    margin: 10px auto; /* b */
+    border-collapse: collapse; /* c */
+}
+
+/* Question 14: Style td and th */
+td, th {
+    border: 1px solid var(--brown); /* a */
+    padding: 2px 5px; /* b */
+    background-color: var(--pink); /* c */
+}
+
+/* Question 15: Style the th in the footer and in the table */
+tfoot th {
+    text-transform: uppercase; /* a */
+    background-color: var(--apricot); /* b */
+    color: var(--brown); /* b */
+}
+table th {
+    text-transform: uppercase; /* a */
+    background-color: var(--apricot); /* b */
+    color: var(--brown); /* b */
+}
+
+/* Question 16: Make the dt bold */
+dt {
+    font-weight: bold; /* a */
+}
+
+/* Question 17: Style the footers elements */
+footer {
+    font-size: 80%; /* a */
+    text-align: center; /* b */
+    padding: 1px 0; /* c */
+}
+
+/* Question 18: Style iframe elements */
+iframe {
+    margin: 10px auto; /* a */
+    display: block; /* b */
+}
+
+/* Question 19: Style fieldset elements */
+fieldset {
+    width: 500px; /* a */
+    margin: 20px auto; /* b */
+    border: 2px solid var(--brown); /* c */
+    background-color: var(--apricot); /* d */
+    border-radius: 5px; /* making the border rounded */
+}
+
+/* Question 20: Style the legends */
+legend {
+    font-style: italic; /* a */
+    background-color: var(--pink); /* b */
+    color: var(--brown); /* b again */
+    margin: 0 10px; /* c */
+    padding: 0 5px; /* d */
+    border-radius: 10px; /* e */
+}
+
+/* Question 21: Style input with a value of submit elements */
+input[type="submit"] {
+    border: 3px solid var(--brown); /* a */
+    padding: 5px; /* b */
+    background-color: var(--apricot); /* c */
+    color: var(--pink); /* d */
+}
+
+/* Question 22: make styling when hovering */
+input[type="submit"]:hover {
+    color: var(--violet); /* a */
+    background-color: var(--white-pink); /* a */
+    cursor: pointer; /* b */
+}
